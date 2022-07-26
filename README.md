@@ -1,3 +1,3 @@
-"# kmmo-oot-driver-pipeline" 
+# kmmo-oot-driver-pipeline
 
 ![lld Image](/img/lld.drawio.png)
