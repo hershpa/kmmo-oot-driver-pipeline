@@ -1,3 +1,3 @@
 # kmmo-oot-driver-pipeline
 
-![lld Image](/img/lld.jpg)
+![lld Image](/img/lldv0.2.png)
