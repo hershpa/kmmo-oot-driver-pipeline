@@ -1,5 +1,5 @@
 ARG DTK_AUTO=image-registry.openshift-image-registry.svc:5000/openshift/driver-toolkit:latest
-ARG KERNEL_FULL_VERSION=4.18.0-372.26.1
+ARG KERNEL_FULL_VERSION=4.18.0-372.19.1
 FROM ${DTK_AUTO} as builder
 
 WORKDIR /build/
