@@ -25,7 +25,7 @@ RUN git clone -b redhat/main https://github.com/intel-gpu/intel-gpu-i915-backpor
 # Firmware
 RUN git clone https://github.com/intel-gpu/intel-gpu-firmware.git
 
-FROM registry.redhat.io/ubi8/ubi-minimal
+FROM registry.access.redhat.com/ubi8/ubi-minimal:latest
 RUN microdnf -y install kmod
 COPY --from=builder /etc/driver-toolkit-release.json /etc/
 COPY --from=builder /lib/modules/$KERNEL_FULL_VERSION/ /opt/lib/modules/$KERNEL_FULL_VERSION/
