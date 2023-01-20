@@ -3,7 +3,7 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: ci-intel-dgpu-dockerfile-configmap
-  namespace: intel-dgpu
+  namespace: pipelines-tutorial
 data:
   dockerfile: >
     ARG DTK_AUTO

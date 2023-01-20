@@ -5,7 +5,7 @@ metadata:
   labels:
     app: ci-intel-dgpu-driver-container-kmmo
   name: ci-intel-dgpu-driver-container-kmmo
-  namespace: intel-dgpu
+  namespace: pipelines-tutorial
 spec: {}
 
 ---
@@ -13,7 +13,7 @@ apiVersion: kmm.sigs.k8s.io/v1beta1
 kind: Module
 metadata:
   name: ci-intel-dgpu-cicd-build-mode
-  namespace: intel-dgpu
+  namespace: pipelines-tutorial
 spec:
   moduleLoader:
     container:
