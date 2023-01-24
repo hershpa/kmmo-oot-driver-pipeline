@@ -9,7 +9,7 @@ metadata:
 spec: {}
 
 ---
-apiVersion: kmm.sigs.k8s.io/v1beta1
+apiVersion: kmm.sigs.x-k8s.io/v1beta1
 kind: Module
 metadata:
   name: ci-intel-dgpu-cicd-build-mode
@@ -24,13 +24,13 @@ spec:
         - regexp: ^.*\.x86_64$
           containerImage: image-registry.openshift-image-registry.svc:5000/intel-dgpu/ci-intel-dgpu-driver-container-kmmo:$KERNEL_FULL_VERSION
           pull:
-            insecureSkipTLSVerify: true
+            insecureSkipTLSVerify: false
           build:
             pull:
-              insecureSkipTLSVerify: true
+              insecureSkipTLSVerify: false
               insecure: false
             push:
-              insecureSkipTLSVerify: true
+              insecureSkipTLSVerify: false
               insecure: false
             dockerfileConfigMap:
               name: ci-intel-dgpu-dockerfile-configmap
